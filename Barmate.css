@@ -1,0 +1,135 @@
+/* Style for header title */
+header .row,
+.header {
+    padding-top: 50px;
+	padding-bottom: 10px;
+    text-align: center;
+    color: white;
+}	
+
+header nav{
+	display: center;
+	float: left;
+}	
+
+/* Increase the font size of the heading */
+.header h1 {
+    font-size: 100px;
+	margin-bottom: 10px;
+	margin-top: 25px;
+ 	
+}
+
+/*Style for body*/
+ img {
+    width: 4%;
+    height: auto;
+}
+ body {
+    font-family: "HKGrotesk", Helvetica, sans-serif;
+    margin: 0;
+	  background: linear-gradient(to top, #42137b, #302c9e) fixed;
+
+}
+
+*[id]:before { 
+  display: block; 
+  content: " "; 
+  margin-top: -100px; 
+  height: 75px; 
+  visibility: hidden; 
+}
+
+/* parallax body style*/
+body1{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/* parallax style*/
+#box1{
+	
+    height: 100vh;
+    width: 100%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+    background-image: url("background1.jpg");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+/* parallax style*/
+#box2{
+    height: 100vh;
+    width: 100%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+    background-image: url("background2.jpg");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+/* parallax style*/
+#box3{
+    height: 100vh;
+    width: 100%;
+	padding-top: 200px;
+	padding-bottom: 200px;
+    background-image: url("background3.png");
+    background-size: cover;
+    display: table;
+    background-attachment: fixed;
+}
+
+
+
+/*Text Box*/
+.text-block{ 
+   color: white; 
+   font: 24px/45px Helvetica, Sans-Serif;
+   background: linear-gradient(to top, #42137b, #302c9e) fixed;
+   text-align: left;
+   background: rgba(0, 0, 0, 0.7);
+   padding-left: 50px;
+   padding-right: 0px;
+   padding-top: 30px;
+   margin-left: 400px;
+   margin-right: 400px;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   border-radius: 25px;   
+}
+
+.text-block li {
+	padding: 0px 40px 40px 0px;
+	
+}
+
+.text-block img {
+	float: right;
+	height: 75px !important;
+	width: 75px !important;
+}
+
+.col-sm-11{
+	
+	padding-left:45px;
+	padding-right: 45px;
+}
+
+
+
+/* Style for Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background: #ddd;
+}
+
+#blog{
+	color: white;
+	text-align: center;
+	margin-top: 20px;
+}

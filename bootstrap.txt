@@ -1,0 +1,20 @@
+Bootstrap:
+
+In the <head> section, link to bootstrap using:
+
+<link rel="stylesheet" href="(newest version of bootstrap link)"
+
+bootstrap page layout:
+
+(see saved messages in telegram)
+
+the grid is represented by 12 vertical bars
+the boxes within them represent the HTML elements
+
+container and jumbotron, along with col-sm-6 and col-sm-3, refer to bootstrap classes
+
+"jumbotron" spans the whole screen and is wider than the border of the grid
+
+col-sm-6 and col-sm-3 are labeled as such because they take up that number of grid columns
+
+If you dont want to use the entirety of the screen use the class "conntainer." To refer to the columns in HTML: within the element, whether it be < header...> <body...>, you can reference the class by adding - class="container" - to create elements that align within a row use the HTML element <div...> then reference the class row - <div class = "row"> add whatever html element you want, such as a header, <h1.../>. in order to choose how long you want the element reference - class="col-sm-(insert number of rows you wish to span)". the HTML element should look similar to <h1 class="col-sm-4">Heading</h1> 
