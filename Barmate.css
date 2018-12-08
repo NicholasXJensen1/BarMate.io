@@ -29,7 +29,6 @@ header nav{
     font-family: "HKGrotesk", Helvetica, sans-serif;
     margin: 0;
 	  background: linear-gradient(to top, #42137b, #302c9e) fixed;
-
 }
 
 *[id]:before { 
@@ -66,7 +65,7 @@ body1{
     width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
-    background-image: url("background2.jpg");
+    background-image: url("background2.png");
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -95,8 +94,8 @@ body1{
    padding-left: 50px;
    padding-right: 0px;
    padding-top: 30px;
-   margin-left: 400px;
-   margin-right: 400px;
+   margin-left: 350px;
+   margin-right: 350px;
    margin-top: 50px;
    margin-bottom: 50px;
    border-radius: 25px;   
@@ -114,12 +113,63 @@ body1{
 }
 
 .col-sm-11{
-	
 	padding-left:45px;
 	padding-right: 45px;
 }
 
+.myBtn_multi{
+	color: blue;
+	background: transparent; /*hide button background*/
+	text-align: center; /*keep the button text in line with the text*/
+	border-color: transparent;
+}
 
+/* The Modal (background) */
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+	padding-left: 300px; /* Keep modal width tight*/
+	padding-right: 300px; /* Keep modal width tight*/
+    height: 100% auto; /* Full height */
+	overflow-y: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+	background: linear-gradient(to top, #42137b, #302c9e) fixed;
+    margin: 20% auto; /* 15% from the top and centered */
+    padding: 10px;
+    border: 3px #888;
+	border-radius: 25px;
+    width: 80%; /* Could be more or less, depending on screen size */
+	overflow-y: auto; /*enable scroll*/ 
+	max-height: calc(100vh - 210px);
+	
+}
+
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
 
 /* Style for Footer */
 .footer {
