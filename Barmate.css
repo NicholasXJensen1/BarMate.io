@@ -28,13 +28,13 @@ header nav{
  body {
     font-family: "HKGrotesk", Helvetica, sans-serif;
     margin: 0;
-	  background: linear-gradient(to top, #42137b, #302c9e) fixed;
+	background: linear-gradient(to top, #42137b, #302c9e) fixed;
 }
 
 *[id]:before { 
   display: block; 
   content: " "; 
-  margin-top: -100px; 
+  margin-top: -100px;
   height: 75px; 
   visibility: hidden; 
 }
@@ -98,12 +98,11 @@ body1{
    margin-right: 350px;
    margin-top: 50px;
    margin-bottom: 50px;
-   border-radius: 25px;   
+   border-radius: 25px;
 }
 
 .text-block li {
-	padding: 0px 40px 40px 0px;
-	
+	padding: 0px 40px 40px 0px;	
 }
 
 .text-block img {
@@ -121,7 +120,7 @@ body1{
 	color: blue;
 	background: transparent; /*hide button background*/
 	text-align: center; /*keep the button text in line with the text*/
-	border-color: transparent;
+	border-color: transparent; /* hide the background of the button*/
 }
 
 /* The Modal (background) */
