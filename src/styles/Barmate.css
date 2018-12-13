@@ -54,7 +54,7 @@ body1{
     width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
-    background-image: url("background1.jpg");
+    background-image: url("../images/background1.jpg");
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -65,7 +65,7 @@ body1{
     width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
-    background-image: url("background2.png");
+    background-image: url("../images/background2.png");
     background-size: cover;
     display: table;
     background-attachment: fixed;
@@ -76,7 +76,7 @@ body1{
     width: 100%;
 	padding-top: 200px;
 	padding-bottom: 200px;
-    background-image: url("background3.png");
+    background-image: url("../images/background3.png");
     background-size: cover;
     display: table;
     background-attachment: fixed;
