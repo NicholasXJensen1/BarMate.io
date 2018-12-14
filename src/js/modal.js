@@ -11,7 +11,7 @@
 
         // When the user clicks the button, open the modal
         function setDataIndex() {
-
+            
             for (i = 0; i < modal_btn_multi.length; i++)
             {
                 modal_btn_multi[i].setAttribute('data-index', i);
@@ -45,10 +45,5 @@
         window.onclick = function(event) {
             if (event.target === modalparent[event.target.getAttribute('data-index')]) {
                 modalparent[event.target.getAttribute('data-index')].style.display = "none";
-            }
-
-            // OLD CODE
-            if (event.target === modal) {
-                modal.style.display = "none";
             }
         };

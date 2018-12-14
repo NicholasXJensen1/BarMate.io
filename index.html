@@ -4,54 +4,27 @@
 <title>Barmate.io</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" type="text/css" href="./src/styles/Barmate.css"/>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<!-- Javascript for modal -->
+<script src="./src/js/modal.js"></script>
+
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for social media app icons-->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"><!--for social media app icons-->
-<style>
-/* width */
-::-webkit-scrollbar {
-    width: 10px;
-}
+<link rel="stylesheet" type="text/css" href="./src/styles/styles.css"/>
+</head>
 
-/* Track */
-::-webkit-scrollbar-track {
-	background-color: rgba(0, 0, 0, 0.7);
-    box-shadow: inset 0 0 5px darkblue; 
-    border-radius: 10px;
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: purple; 
-    border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #302c9e; 
-}
-</style>
-
-<body>
-<div class="header">
-  <h1>BarMate</h1>
-  <p>The Guide to Going Out</p>
-</div>
-<html lang="en"><head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-
-
-  <body id="page-top">
+<body id="page-top">
 
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
       <div class="container">
 		<img src = "./src/images/logo.png" href = "#page-top"/>
         <a class="navbar-brand js-scroll-trigger" href="#page-top">BarMate</a> 
@@ -75,46 +48,51 @@
           </ul>
         </div>
       </div>
-    </nav>
+	</nav>
 	
-<div id="box1">
-	<div class = "text-block">
-		<section id="about">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-11">
-					<h2>About Us</h2>
-					<p class="lead">BarMate is a smart phone app that utilizes location based services to provide social opportunities for individuals to interact at physical locations. <button class="myBtn_multi">Read more!</button> </p>
-     
-	 <!-- Trigger/Open The Modal -->
+	<div class="header">
+		<h1>BarMate</h1>
+		<p>The Guide to Going Out</p>
+	</div>
 
-						<!-- The About Us Modal -->
-						<div class="modal modal_multi">
+	<div id="box" style="background-image: url(src/images/background1.jpg);">
+		<div class = "text-block">
+			<section id="about">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-11">
+						<h2>About Us</h2>
+						<p class="lead">BarMate is a smart phone app that utilizes location based services to provide social opportunities for individuals to interact at physical locations. <button class="myBtn_multi">Read more!</button> </p>
+		
+			<!-- Trigger/Open The Modal -->
 
-							<!-- Modal content -->
-							<div class="modal-content">
-								<span class="close close_multi">&times</span>
-								<p> BarMate is a company started by six (6) young adults. The original idea for BarMate was much like the idea for the telephone where two people had almost the exact same idea at the same time. Two of our co-founders, had this idea that people at bars spend much time thinking about interacting with people and too little time doing so. Two friends in Tallahassee, Florida contacted a long time friend in Akron, Ohio, Rodney Morgan. Rodney assembled the rest of the founding team and when it all became official, five of the six original members were able to move forward with product creation. We now have a sound team around a remarkable product, "The Guide to Going Out!"<div class = "pics">
-								<ul>
-								<li>Rodney Morgan, CEO <img id = "profile" src="./src/images/Rodney.png"/></li>
-								<li>Riley Shelton, COO <img src="./src/images/Riley.jpg"/></li>
-								<li>Kevin Turner, CIO <img src="./src/images/Kevin.jpg"/></li>
-								<li>Joe Contumelio, CTO <img src="./src/images/Joe.jpg"/> </li>
-								<li> Jovan Sanson, CMO <img src="./src/images/Jovan.jpg"/></li>
-								<li>Nicholas Jensen, CFO <img src="./src/images/Nick.jpg"/></li>
-								</ul>
-									</div>
-								</p>
+							<!-- The About Us Modal -->
+							<div class="modal modal_multi">
+
+								<!-- Modal content -->
+								<div class="modal-content">
+									<span class="close close_multi">&times</span>
+									<p> BarMate is a company started by six (6) young adults. The original idea for BarMate was much like the idea for the telephone where two people had almost the exact same idea at the same time. Two of our co-founders, had this idea that people at bars spend much time thinking about interacting with people and too little time doing so. Two friends in Tallahassee, Florida contacted a long time friend in Akron, Ohio, Rodney Morgan. Rodney assembled the rest of the founding team and when it all became official, five of the six original members were able to move forward with product creation. We now have a sound team around a remarkable product, "The Guide to Going Out!"<div class = "pics">
+									<ul>
+									<li>Rodney Morgan, CEO <img id = "profile" src="./src/images/Rodney.png"/></li>
+									<li>Riley Shelton, COO <img src="./src/images/Riley.jpg"/></li>
+									<li>Kevin Turner, CIO <img src="./src/images/Kevin.jpg"/></li>
+									<li>Joe Contumelio, CTO <img src="./src/images/Joe.jpg"/> </li>
+									<li> Jovan Sanson, CMO <img src="./src/images/Jovan.jpg"/></li>
+									<li>Nicholas Jensen, CFO <img src="./src/images/Nick.jpg"/></li>
+									</ul>
+										</div>
+									</p>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		</div>
 	</div>
-</div>
 	
-<div id="box2">	
+<div id="box" style="background-image: url(src/images/background2.png);">	
 	<div class = "text-block">
 		<section id="barservices">
 		<div class="container">
@@ -140,7 +118,7 @@
 	</div>
 </div>
 
-<div id="box3">
+<div id="box" style="background-image: url(src/images/background3.jpg);">
 	<div class = "text-block">
 		<section id="consumerservice">
 		<div class="container">
@@ -177,24 +155,7 @@
 	</div>
       <!-- /.container -->
 </footer>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <!-- Plugin JavaScript -->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-
-    <!-- Custom JavaScript for this theme -->
-    <script src="js/scrolling-nav.js"></script>
-	
-	<!-- Javascript for modal -->
-	<script src="./src/js/modal.js"></script>
-  
-
-
 </body>
-</head>
 </html>
 
 
