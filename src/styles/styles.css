@@ -7,7 +7,6 @@
 ::-webkit-scrollbar-track {
 	background-color: rgba(0, 0, 0, 0.7);
     box-shadow: inset 0 0 5px darkblue; 
-    border-radius: 10px;
 }
  
 /* Handle */
@@ -20,6 +19,8 @@
 ::-webkit-scrollbar-thumb:hover {
     background: #302c9e; 
 }
+
+
 /* Style for header title */
 header .row,
 .header {
@@ -42,6 +43,9 @@ header nav{
 
 /* Increase the font size of the heading */
 .header h1 {
+    font-family: 'HankenGroteskRegular'; 
+    font-weight: bold; 
+    font-style: normal;
     font-size: 100px;
 	margin-bottom: 10px;
 	margin-top: 25px;
@@ -49,14 +53,16 @@ header nav{
 }
 
 /*Style for body*/
- img {
-    width: 4%;
+img {
+    width: 44.3906px;
     height: auto;
 }
  body {
-    font-family: "HKGrotesk", Helvetica, sans-serif;
-    margin: 0;
-	background: linear-gradient(to top, #42137b, #302c9e) fixed;
+     font-family: 'HankenGroteskRegular'; 
+     font-weight: normal; 
+     font-style: normal;
+     margin: 0;
+     background: linear-gradient(to top, #42137b, #302c9e) fixed;
 }
 
 *[id]:before { 
@@ -92,8 +98,7 @@ body1{
 /*Text Box*/
 .text-block{ 
    color: #d8d8d8; 
-   font: 24px/45px Helvetica, Sans-Serif;
-   background: linear-gradient(to top, #42137b, #302c9e) fixed;
+   background: linear-gradient(to bottom, #42137b 0%, #302c9e 50%);
    text-align: left;
    padding-left: 50px;
    padding-right: 0px;
@@ -103,6 +108,10 @@ body1{
    margin-top: 50px;
    margin-bottom: 50px;
    border-radius: 25px;
+}
+
+.text-block h2{
+    font-weight: bold;
 }
 
 .text-block li {
@@ -121,7 +130,7 @@ body1{
 }
 
 .myBtn_multi{
-	color: blue;
+	color: #42137b;
 	background: transparent; /*hide button background*/
 	text-align: center; /*keep the button text in line with the text*/
 	border-color: transparent; /* hide the background of the button*/
