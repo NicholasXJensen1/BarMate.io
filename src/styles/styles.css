@@ -91,11 +91,10 @@ body1{
 
 /*Text Box*/
 .text-block{ 
-   color: white; 
+   color: #d8d8d8; 
    font: 24px/45px Helvetica, Sans-Serif;
    background: linear-gradient(to top, #42137b, #302c9e) fixed;
    text-align: left;
-   background: rgba(0, 0, 0, 0.7);
    padding-left: 50px;
    padding-right: 0px;
    padding-top: 30px;
