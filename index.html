@@ -13,7 +13,8 @@
 
 <!-- Javascript for modal -->
 <script src="./src/js/modal.js"></script>
-
+<script src="./src/js/navbar.js"></script>
+ 
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for social media app icons-->
@@ -23,10 +24,14 @@
 
 <body id="page-top">
 
+	<div class="header">
+		<h1>BarMate</h1>
+		<p>The Guide to Going Out</p>
+	</div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="mainNav">
+    <nav class="navbar navbar-expand-lg" id="mainNav">
       <div class="container">
-		<img src = "./src/images/logo.png" href = "#page-top"/>
+		<img src="./src/images/logo.png" href = "#page-top"/>
         <a class="navbar-brand js-scroll-trigger" href="#page-top">BarMate</a> 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -50,111 +55,111 @@
       </div>
 	</nav>
 	
-	<div class="header">
-		<h1>BarMate</h1>
-		<p>The Guide to Going Out</p>
-	</div>
+	
+	<div class="content">
 
-	<div id="box" style="background-image: url(src/images/background1.jpg);">
-		<div class = "text-block">
-			<section id="about">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-11">
-						<h2>About Us</h2>
-						<p class="lead">BarMate is a smart phone app that utilizes location based services to provide social opportunities for individuals to interact at physical locations. <button class="myBtn_multi">Read more!</button> </p>
-		
-			<!-- Trigger/Open The Modal -->
-
-							<!-- The About Us Modal -->
-							<div class="modal modal_multi">
-
-								<!-- Modal content -->
-								<div class="modal-content">
-									<span class="close close_multi">&times</span>
-									<p> BarMate is a company started by six (6) young adults. The original idea for BarMate was much like the idea for the telephone where two people had almost the exact same idea at the same time. Two of our co-founders, had this idea that people at bars spend much time thinking about interacting with people and too little time doing so. Two friends in Tallahassee, Florida contacted a long time friend in Akron, Ohio, Rodney Morgan. Rodney assembled the rest of the founding team and when it all became official, five of the six original members were able to move forward with product creation. We now have a sound team around a remarkable product, "The Guide to Going Out!"<div class = "pics">
-									<ul>
-									<li>Rodney Morgan, CEO <img id = "profile" src="./src/images/Rodney.png"/></li>
-									<li>Riley Shelton, COO <img src="./src/images/Riley.jpg"/></li>
-									<li>Kevin Turner, CIO <img src="./src/images/Kevin.jpg"/></li>
-									<li>Joe Contumelio, CTO <img src="./src/images/Joe.jpg"/> </li>
-									<li> Jovan Sanson, CMO <img src="./src/images/Jovan.jpg"/></li>
-									<li>Nicholas Jensen, CFO <img src="./src/images/Nick.jpg"/></li>
-									</ul>
-										</div>
-									</p>
+		<div id="box" style="background-image: url(src/images/background1.jpg);">
+			<div class="text-block">
+				<section id="about">
+					<div class="container">
+						<div class="row">
+							<div class="col-sm-11">
+							<h2>About Us</h2>
+							<p class="lead">BarMate is a smart phone app that utilizes location based services to provide social opportunities for individuals to interact at physical locations. <button class="myBtn_multi">Read more!</button> </p>
+			
+				<!-- Trigger/Open The Modal -->
+	
+								<!-- The About Us Modal -->
+								<div class="modal modal_multi">
+	
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span class="close close_multi">&times</span>
+										<p> BarMate is a company started by six (6) young adults. The original idea for BarMate was much like the idea for the telephone where two people had almost the exact same idea at the same time. Two of our co-founders, had this idea that people at bars spend much time thinking about interacting with people and too little time doing so. Two friends in Tallahassee, Florida contacted a long time friend in Akron, Ohio, Rodney Morgan. Rodney assembled the rest of the founding team and when it all became official, five of the six original members were able to move forward with product creation. We now have a sound team around a remarkable product, "The Guide to Going Out!"<div class = "pics">
+										<ul>
+										<li>Rodney Morgan, CEO <img id = "profile" src="./src/images/Rodney.png"/></li>
+										<li>Riley Shelton, COO <img src="./src/images/Riley.jpg"/></li>
+										<li>Kevin Turner, CIO <img src="./src/images/Kevin.jpg"/></li>
+										<li>Joe Contumelio, CTO <img src="./src/images/Joe.jpg"/> </li>
+										<li> Jovan Sanson, CMO <img src="./src/images/Jovan.jpg"/></li>
+										<li>Nicholas Jensen, CFO <img src="./src/images/Nick.jpg"/></li>
+										</ul>
+											</div>
+										</p>
+									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-			</section>
+				</section>
+			</div>
 		</div>
-	</div>
+		
+		<div id="box" style="background-image: url(src/images/background2.png);">	
+			<div class = "text-block">
+				<section id="barservices">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-11">
+							<h2>BarMate for Business</h2>
+							<p class="lead">When it comes to running a business, you can never have enough data on your market. BarMate for Business is the  perfect data analytics tool for bar owners! <button class="myBtn_multi">Read Even More!</button></p>
+				
+							<!-- The BarMate for Business Modal -->
+								<div class="modal modal_multi">
 	
-<div id="box" style="background-image: url(src/images/background2.png);">	
-	<div class = "text-block">
-		<section id="barservices">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-11">
-					<h2>BarMate for Business</h2>
-					<p class="lead">When it comes to running a business, you can never have enough data on your market. BarMate for Business is the  perfect data analytics tool for bar owners! <button class="myBtn_multi">Read Even More!</button></p>
-         
-					<!-- The BarMate for Business Modal -->
-						<div class="modal modal_multi">
-
-							<!-- Modal content -->
-							<div class="modal-content">
-								<span class="close close_multi">&times</span>
-								<p> With BarMate for Business, bar owners will be able to update and market specials, events, and unique bar attributes, but they will get much more than that! Bar owners will have the ability to see metrics on their specials and special events. BarMate will track the influx of users during special events and specials to truly show how successful each event is. Bar owners can see this data and better understand their audience. With this tool bars can have much more successful promotions.
-								</p>
-							</div>
-						</div>	
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span class="close close_multi">&times</span>
+										<p> With BarMate for Business, bar owners will be able to update and market specials, events, and unique bar attributes, but they will get much more than that! Bar owners will have the ability to see metrics on their specials and special events. BarMate will track the influx of users during special events and specials to truly show how successful each event is. Bar owners can see this data and better understand their audience. With this tool bars can have much more successful promotions.
+										</p>
+									</div>
+								</div>	
+						</div>
+					</div>
 				</div>
+				</section>
 			</div>
 		</div>
-		</section>
-	</div>
-</div>
-
-<div id="box" style="background-image: url(src/images/background3.jpg);">
-	<div class = "text-block">
-		<section id="consumerservice">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-11">
-					<h2>Bar Goer Services</h2>
-					<p class="lead">  BarMate is a platform with a broad collection of features for people and bar owners. Users are able to see menus, look at upcoming bar events, engage in a chat room with other people inside the bar, and <button class="myBtn_multi">more.</button></p>
-         
-		 		  <!-- The BarMate for Consumer Modal -->
-						<div class="modal modal_multi">
-
-							<!-- Modal content -->
-							<div class="modal-content">
-								<span class="close close_multi">&times</span>
-								<p> Bar goers seek new and excited places to spend their hard-earned money. People today don’t just go out to drink like those of the previous generations. They search for excitement and adventure to get the most fun experience out of the money they spend. For this reason, new types of bars have been popping up all over the U.S., we call these “specialty bars.” These specialty bars can have a variety of offerings for their patrons including vintage video games, board games, and even shuffleboard! With all these specials, don’t you want to see where it’s all happening? Of course, you do! BarMate will allow you to see all the bars in your area to help you decide for yourself which locations have everything you need to have the best night possible. So, whether you’re going out to a wine bar to relax after a long week or a barcade where you can smash your friends’ high scores in Pac-man, BarMate will help you find it all! 
-								</p>
-							</div>
+	
+		<div id="box" style="background-image: url(src/images/background3.jpg);">
+			<div class = "text-block">
+				<section id="consumerservice">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-11">
+							<h2>Bar Goer Services</h2>
+							<p class="lead">  BarMate is a platform with a broad collection of features for people and bar owners. Users are able to see menus, look at upcoming bar events, engage in a chat room with other people inside the bar, and <button class="myBtn_multi">more.</button></p>
+				
+						<!-- The BarMate for Consumer Modal -->
+								<div class="modal modal_multi">
+	
+									<!-- Modal content -->
+									<div class="modal-content">
+										<span class="close close_multi">&times</span>
+										<p> Bar goers seek new and excited places to spend their hard-earned money. People today don’t just go out to drink like those of the previous generations. They search for excitement and adventure to get the most fun experience out of the money they spend. For this reason, new types of bars have been popping up all over the U.S., we call these “specialty bars.” These specialty bars can have a variety of offerings for their patrons including vintage video games, board games, and even shuffleboard! With all these specials, don’t you want to see where it’s all happening? Of course, you do! BarMate will allow you to see all the bars in your area to help you decide for yourself which locations have everything you need to have the best night possible. So, whether you’re going out to a wine bar to relax after a long week or a barcade where you can smash your friends’ high scores in Pac-man, BarMate will help you find it all! 
+										</p>
+									</div>
+								</div>
+				
 						</div>
-		 
-				</div>
+					</div>
+				</div>	  
+				</section>
 			</div>
-		</div>	  
-		</section>
-	</div>
-</div>
+		</div>
+	
+			<!-- Footer -->
+		<footer class="py-5 bg-dark">
+			<div class="container">
+				<p class="m-0 text-center text-white">Copyright © BarMate L.L.C. 2018</p>
+				<section id="blog">
+				<p class="lead">See what we're doing now and where we're going from here! Check out our <a href="./src/html/blog.html">blog</a>!</p>
+				<p><a href="https://www.facebook.com/BarMateMobileApp/?modal=admin_todo_tour" class="fa fa-facebook"></a> <a href="https://twitter.com/BarMateMobile" class="fa fa-twitter"></a> <a href="https://www.linkedin.com/in/barmate-mobile-app-48ab7a169/" class="fa fa-linkedin"></a> <a href="https://www.instagram.com/barmatemobileapp/" class="fa fa-instagram"></a></p>
+			</div>
+			<!-- /.container -->
+		</footer>
 
-    <!-- Footer -->
-<footer class="py-5 bg-dark">
-	<div class="container">
-		<p class="m-0 text-center text-white">Copyright © BarMate L.L.C. 2018</p>
-		<section id="blog">
-		<p class="lead">See what we're doing now and where we're going from here! Check out our <a href="./src/html/blog.html">blog</a>!</p>
-		<p><a href="https://www.facebook.com/BarMateMobileApp/?modal=admin_todo_tour" class="fa fa-facebook"></a> <a href="https://twitter.com/BarMateMobile" class="fa fa-twitter"></a> <a href="https://www.linkedin.com/in/barmate-mobile-app-48ab7a169/" class="fa fa-linkedin"></a> <a href="https://www.instagram.com/barmatemobileapp/" class="fa fa-instagram"></a></p>
 	</div>
-      <!-- /.container -->
-</footer>
 </body>
 </html>
 

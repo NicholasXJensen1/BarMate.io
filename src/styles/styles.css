@@ -23,7 +23,7 @@
 /* Style for header title */
 header .row,
 .header {
-    padding-top: 50px;
+    padding-top: 25px;
 	padding-bottom: 10px;
     text-align: center;
     color: white;
@@ -38,8 +38,27 @@ header nav{
     min-height: 100px; 
     margin-bottom: 0px;
     border: 1px solid transparent;
+    
 }	
+.nav-link, .navbar-brand{
+    color: white;
+}
 
+.nav-link:hover, .navbar-brand:hover{
+    color: #d8d8d8;
+}
+
+.navbar.sticky{
+    min-height: 100px; 
+    margin-bottom: 0px;
+    border: 1px solid transparent;
+    background-color: #000000;
+    transition: background-color 0.2s ease 0s;
+    opacity: 0.75;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
 /* Increase the font size of the heading */
 .header h1 {
     font-size: 100px;
@@ -55,27 +74,12 @@ header nav{
 }
  body {
     font-family: "HKGrotesk", Helvetica, sans-serif;
-    margin: 0;
-	background: linear-gradient(to top, #42137b, #302c9e) fixed;
+	background: linear-gradient(to top, #42137b, #302c9e);
 }
-
 .container{
-    padding-top: 25px;
+    padding-top: 35px;
 }
 
-*[id]:before { 
-  display: block; 
-  content: " "; 
-  margin-top: -100px;
-  height: 75px; 
-  visibility: hidden; 
-}
-
-/* parallax body style*/
-body1{
-    margin: 0;
-    padding: 0;
-}
 
 
 
@@ -91,6 +95,12 @@ body1{
     background-attachment: fixed;
 }
 
+
+/* Add some top padding to the page content to prevent sudden quick movement 
+(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 100px;
+  }
 
 
 /*Text Box*/
