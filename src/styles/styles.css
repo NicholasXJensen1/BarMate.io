@@ -59,6 +59,10 @@ header nav{
 	background: linear-gradient(to top, #42137b, #302c9e) fixed;
 }
 
+.container{
+    padding-top: 25px;
+}
+
 *[id]:before { 
   display: block; 
   content: " "; 
