@@ -1,49 +1,52 @@
- // Get the modal
+        
+    // Get the modal
 
-        var modalparent = document.getElementsByClassName("modal_multi");
+    var modalparent = document.getElementsByClassName("modal_multi");
+    console.log(modalparent);
+    // Get the button that opens the modal
 
-        // Get the button that opens the modal
-
-        var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
-
-        // Get the <span> element that closes the modal
-        var span_close_multi = document.getElementsByClassName("close_multi");
-
-        // When the user clicks the button, open the modal
-        function setDataIndex() {
-            
-            for (i = 0; i < modal_btn_multi.length; i++)
-            {
-                modal_btn_multi[i].setAttribute('data-index', i);
-                modalparent[i].setAttribute('data-index', i);
-                span_close_multi[i].setAttribute('data-index', i);
-            }
-        }
-
-
-
+    var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
+    console.log(modalparent);
+    // Get the <span> element that closes the modal
+    var span_close_multi = document.getElementsByClassName("close_multi");
+    console.log(span_close_multi);
+    // When the user clicks the button, open the modal
+    function setDataIndex() {
+        
         for (i = 0; i < modal_btn_multi.length; i++)
         {
-            modal_btn_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "block";
-            };
-
-            // When the user clicks on <span> (x), close the modal
-            span_close_multi[i].onclick = function() {
-                var ElementIndex = this.getAttribute('data-index');
-                modalparent[ElementIndex].style.display = "none";
-            };
-
+            modal_btn_multi[i].setAttribute('data-index', i);
+            modalparent[i].setAttribute('data-index', i);
+            span_close_multi[i].setAttribute('data-index', i);
         }
+    }
 
-        window.onload = function() {
 
-            setDataIndex();
+
+    for (i = 0; i < modal_btn_multi.length; i++)
+    {
+        modal_btn_multi[i].onclick = function() {
+            console.log('click');
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "block";
         };
 
-        window.onclick = function(event) {
-            if (event.target === modalparent[event.target.getAttribute('data-index')]) {
-                modalparent[event.target.getAttribute('data-index')].style.display = "none";
-            }
+        // When the user clicks on <span> (x), close the modal
+        span_close_multi[i].onclick = function() {
+            var ElementIndex = this.getAttribute('data-index');
+            modalparent[ElementIndex].style.display = "none";
         };
+
+    }
+
+    window.onload = function() {
+        setDataIndex();
+    };
+
+    window.onclick = function(event) {
+        console.log('click!');
+        if (event.target === modalparent[event.target.getAttribute('data-index')]) {
+            console.log('trueclick');
+            modalparent[event.target.getAttribute('data-index')].style.display = "none";
+        }
+    };

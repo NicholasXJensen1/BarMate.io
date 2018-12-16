@@ -24,8 +24,6 @@
 /* Style for header title */
 header .row,
 .header {
-    padding-top: 25px;
-	padding-bottom: 10px;
     text-align: center;
     color: white;
 }	
@@ -66,8 +64,7 @@ header nav{
     font-weight: bold; 
     font-style: normal;
     font-size: 100px;
-	margin-bottom: 10px;
-	margin-top: 25px;
+    margin-bottom: 0px;
  	
 }
 
@@ -84,11 +81,13 @@ img {
      background: linear-gradient(to top, #42137b, #302c9e) fixed;
 }
 .container{
-    padding-top: 35px;
+    padding-top: 20px;
 }
 
 
-
+.lead {
+    text-align: center;
+}
 
 /* parallax style*/
 #box{
@@ -103,17 +102,10 @@ img {
 }
 
 
-/* Add some top padding to the page content to prevent sudden quick movement 
-(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
-    padding-top: 100px;
-  }
-
-
 /*Text Box*/
 .text-block{ 
    color: #d8d8d8; 
-   background: linear-gradient(to bottom, #42137b 0%, #302c9e 50%);
+   background: linear-gradient(to bottom, rgba(66, 19, 123, 0.8) 0%, rgba(48, 44, 158, 0.8) 50%);
    text-align: left;
    padding-left: 50px;
    padding-right: 0px;
@@ -127,10 +119,12 @@ img {
 
 .text-block h2{
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 .text-block li {
-	padding: 0px 40px 40px 0px;	
+    padding: 0px 40px 40px 0px;	
 }
 
 .text-block img {
@@ -145,14 +139,21 @@ img {
 }
 
 .myBtn_multi{
-	color: #42137b;
+	color: #8b6eaf;
 	background: transparent; /*hide button background*/
 	text-align: center; /*keep the button text in line with the text*/
-	border-color: transparent; /* hide the background of the button*/
+    border-color: transparent; /* hide the background of the button*/
+    border: 0px;
+    padding: 0px;
 }
 
 /* The Modal (background) */
 
+/* Add some top padding to the page content to prevent sudden quick movement 
+(as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+    padding-top: 100px;
+  }
 
 .modal {
     display: none; /* Hidden by default */
